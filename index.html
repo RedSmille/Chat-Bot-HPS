@@ -104,21 +104,20 @@
 
         // Función para mostrar mensaje automático y ejecutar una búsqueda
         function Mostrar(text) {
-            // Ocultar ambos menús si están visibles
+            // Ocultar la lista de especialidades
             const menu = document.getElementById("especialidadesMenu");
             if (menu) {
                 menu.style.display = "none";
             }
-
+        
             const atencionMenu = document.getElementById("atencionMenu");
             if (atencionMenu) {
                 atencionMenu.style.display = "none";
             }
-
-            // Colocar texto en input, enfocar y enviar
+        
+            // Escribir automaticamente
             const input = document.getElementById("userInput");
             input.value = text;
-            input.focus();
             sendMessage();
         }
 
